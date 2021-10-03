@@ -6,6 +6,5 @@ class TravelersController < ApplicationController
 
   def show
     @traveler = Traveler.find(params[:id])
-    @traveler_favorite_countries
   end 
 end
