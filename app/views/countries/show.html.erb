@@ -7,6 +7,6 @@
 Here is the list of all travelers:
 <ul>
 <% @country.travelers.uniq.each do |traveler| %>
-<%=link_to traveler.name, traveler%>
+   <%=link_to traveler.name, traveler%>
 <% end %>
 </ul>
