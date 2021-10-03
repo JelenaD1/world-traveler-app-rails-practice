@@ -13,3 +13,9 @@ Country.destroy_all
   Traveler.create(name: Faker::Name.unique.name, age: rand(18..65))
   Country.create(name: Faker::Address.unique.country, description: Faker::Lorem.sentence)
 end
+
+
+Vacation.create(country_id: Country.first.id, traveler_id: Traveler.first.id, favorite: true)
+Vacation.create(country: Country.second, traveler: Traveler.last, favorite: false)
+Vacation.create(country: Country.last, traveler: Traveler.first, favorite: true)
+

@@ -1,0 +1,11 @@
+<%= form_for @vacation do |form|%>
+
+<%= form.collection_select :country_id, @all_countries, :id, :name, prompt: true%>
+<%= form.collection_select :traveler_id, @all_travelers, :id, :name, prompt: true%>
+
+ <%= form.label 'favorite?'%> <%= form.check_box :favorite%>
+ 
+
+
+<%= form.submit%>
+<% end %>

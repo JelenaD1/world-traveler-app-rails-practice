@@ -1,0 +1,12 @@
+<h1><%= @traveler.name%></h1>
+ Age: <%= @traveler.age%>
+
+<br>
+<br>
+
+
+Here is your favorite countries: 
+<% @traveler.favorite_countries.each do |country|%>
+   <%= link_to country.name, country%>
+<% end %>
+
