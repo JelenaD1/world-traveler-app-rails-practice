@@ -6,7 +6,11 @@
 
 
 Here is your favorite countries: 
+<ul>
 <% @traveler.favorite_countries.each do |country|%>
+  <li>
    <%= link_to country.name, country%>
+  </li> 
+</ul>  
 <% end %>
 
